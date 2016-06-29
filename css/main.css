@@ -2,6 +2,12 @@ body {
 	background-color: #EEE;
 }
 
+.project {
+	width: 300px;
+	height: 300px;
+
+}
+
 /* Nav Bar */
 
 .nav ul {
