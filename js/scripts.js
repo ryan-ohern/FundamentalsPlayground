@@ -70,19 +70,19 @@
 //************************************************************************
 //******Compare ANY number against ANY array and compare for duplicates***
 
-// randomNumbersArray1 = [23, 11, 67, 32, 89, 31, 99, 2, 8, 11];
+randomNumbersArray1 = [23, 11, 67, 32, 89, 31, 99, 2, 8, 11];
 
-// function isThisNumberInThisArray (numberToBeSearched, arrayToBeChecked){
-// 	for (var randomNumber in arrayToBeChecked){
-// 		if(arrayToBeChecked[randomNumber] === numberToBeSearched){
-// 			console.log(arrayToBeChecked[randomNumber]);
-// 		}else{
-// 			console.log("There are no duplicates");
-// 		}
-// 	}
-// }
+function isThisNumberInThisArray (numberToBeSearched, arrayToBeChecked){
+	for (var randomNumber in arrayToBeChecked){
+		if(arrayToBeChecked[randomNumber] === numberToBeSearched){
+			console.log(arrayToBeChecked[randomNumber]);
+		}else{
+			console.log("There are no duplicates");
+		}
+	}
+}
 
-// isThisNumberInThisArray(23, randomNumbersArray1);
+isThisNumberInThisArray(23, randomNumbersArray1);
 
 // ************************************************************************
 // ******Look at an array and pull out any duplicates******
@@ -113,6 +113,7 @@ var friend = {
 	closeLikeABrother	: true,
 	yearsKnown			: 0,
 	birthDate			: new Date("01/01/2001"),
+	birthMonth			: "",
 
 	//Method
 	//nickKirkes.printVocation() to call it
@@ -127,7 +128,9 @@ var friend = {
 		}
 	},
 	birthdayComingUp: function (){
-		if(this.birthDate === Date){
+		var rightnow = Date;
+		var birthday = 
+		if(this.birthDate === Date.getMonth){
 			return "Their birthday is today!";
 		}
 	}
@@ -141,6 +144,7 @@ nickKirkes.married = false;
 nickKirkes.vocation = "Project Manager at Sales Force";
 nickKirkes.yearsKnown = 20;
 nickKirkes.birthDate = ("06/30/2016");
+nickKirkes.birthMonth = "June";
 
 var hansKloepfer = Object.create(friend);
 hansKloepfer.fullName = "Hans Kloepfer";
